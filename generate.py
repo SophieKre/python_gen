@@ -11,7 +11,7 @@ class Text():
             text = text_file.read()
             # print(text)
             text = text.strip().lower()
-            text = re.sub(r"[!?;\-.—:\"\',]", '', text)
+            text = re.sub(r"[^\ Ёёа-яА-Я]", ' ', text)
             words = text.split()
             text = ' '.join(words)
             b = {}
