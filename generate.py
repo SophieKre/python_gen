@@ -52,7 +52,7 @@ class Text():
         return text
 
 
-text1 = Text('for_study.txt')
+text1 = Text('data.txt')
 text1.fit()
 print(text1.generate(25))
 
